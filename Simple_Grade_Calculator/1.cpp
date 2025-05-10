@@ -10,13 +10,22 @@ int main()
 
     if (score >= 0)
     {
-        grade = (score >= 81 && score <= 100)  ? 'A'
-            : (score <= 80 && score >= 71) ? 'B'
-            : (score <= 70 && score >= 61) ? 'C'
-            : (score <= 60 && score >= 51) ? 'D'
-            : (score <= 50 && score >= 41) ? 'E'
-            : (score <= 40 && score >= 0)  ? 'F' : ' '; 
-        cout << "Your grade is " << grade << endl;
+        if (score <= 100)
+        {
+            grade = (score >= 81 && score <= 100)  ? 'A'
+                    : (score <= 80 && score >= 71) ? 'B'
+                    : (score <= 70 && score >= 61) ? 'C'
+                    : (score <= 60 && score >= 51) ? 'D'
+                    : (score <= 50 && score >= 33) ? 'E'
+                    : (score <= 32 && score >= 0)  ? 'F'
+                                                   : ' ';
+            cout << "Your grade is " << grade << endl;
+        }
+        else
+        {
+            cout << "Enter valid marks" << endl;
+        }
+        
     }
     else
     {

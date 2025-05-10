@@ -1,0 +1,33 @@
+Project Criteria:
+Requirements:
+    Class & Object
+    Polymorphism
+    Inheritance
+    Encapsulation
+Class Structure:
+    1. Base Class: BankAccount
+        Attributes:
+            accountNumber
+            accountHolderName
+            balance
+        Methods:
+        deposit(amount: double): Adds funds to the account.
+        withdraw(amount: double): Withdraws funds from the account.
+        getBa1ance(): double: Retums the current balance
+        displayAccountInfo(): Displays account details.
+    2. Derived Class: SavingsAccount (from BankAccount)
+        Attribute: interestRate
+        Method: calculatelnterest(): Calculates interest based on the balance and interest
+    3. Derived Class: CheckingAccount (from BankAccount)
+        Attribute: overdraftLimit
+        Method: checkOverdraft(): Checks if a withdrawal exceeds the overdraft limit.
+    4. Derived Class: FixedDepositAccount (from BankAccount)
+        Attribute: term (duration in months)
+        Method: calculatelnterest(): Calculates fixed deposit interest
+    Requirements:
+        1. Create instances of different account types (savings, checking, fixed deposit)
+        2. Demonstrate polymorphism by calling methods (e.g., calculatelnterest()) through the base class pointer
+        3. Ensure encapsulation by making account balances private and providing appropriate
+        accessors
+        4. Implement transaction methods (deposit, withdraw) for each account type.
+        5. Create a user-friendly menu-driven interface for account management.
