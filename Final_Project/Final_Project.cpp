@@ -193,7 +193,7 @@ void merge(vector<int> &a, int left, int mid, int right)
     int i = 0, j = 0, k = left;
 
     while (i < leftArr.size() && j < rightArr.size())
-        a[k++] = (leftArr[i] < rightArr[i]) ? leftArr[i++] : rightArr[j++];
+        a[k++] = (leftArr[i] < rightArr[j]) ? leftArr[i++] : rightArr[j++];
 
     while (i < leftArr.size())
         a[k++] = leftArr[i++];
