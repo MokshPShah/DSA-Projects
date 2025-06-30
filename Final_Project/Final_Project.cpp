@@ -198,7 +198,7 @@ void merge(vector<int> &a, int left, int mid, int right)
     while (i < leftArr.size())
         a[k++] = leftArr[i++];
 
-    while (i < rightArr.size())
+    while (j < rightArr.size())
         a[k++] = rightArr[j++];
 }
 
